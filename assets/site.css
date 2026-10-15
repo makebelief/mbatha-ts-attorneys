@@ -174,3 +174,79 @@ button:disabled{opacity:.64;cursor:not-allowed;transform:none}
 .topbar-links a{overflow-wrap:anywhere}
 @media(max-width:1050px){.brand img{max-width:220px;height:64px}}
 @media(max-width:640px){.brand img{max-width:185px;height:55px}.footer-logo img{max-width:230px}.topbar-links{gap:10px}}
+
+
+/* MBATHA LOGO-SAMPLED COLOUR SYSTEM - 2026 */
+/* Sampled from client-provided artwork, not an invented theme:
+   Logo lettering: #203542 (exact dominant opaque RGB pixel of header wordmark).
+   Emblem gold: #dcb53f (representative saturated emblem gold).
+   Logo's shadow/bronze accent: #977636 (exact opaque RGB pixel).
+   Deep/lighter variants below are tonal extensions of these same logo colours.
+   This final layer intentionally overrides inherited colours from older reference sites.
+   Preserve component geometry, imagery, content and WhatsApp brand-green icon. */
+:root {
+  --navy:#203542;
+  --navy-deep:#152934;
+  --navy-soft:#375261;
+  --gold:#dcb53f;
+  --gold-light:#f1d98f;
+  --gold-dark:#977636;
+  --red:#977636;
+  --ink:#203542;
+  --cream:#faf8f0;
+  --line:#e4e8e6;
+  --body:#4b5b64;
+  --shadow:0 24px 65px rgba(32,53,66,.14);
+}
+body{color:var(--ink)}
+::selection{background:var(--gold);color:var(--navy)}
+:focus-visible{outline:3px solid var(--gold-dark);outline-offset:4px}
+.topbar{background:var(--navy);color:#f1eee5}
+.topbar svg,.topbar-links a:hover{color:var(--gold-light)}
+.nav-shell{background:#fff;border-bottom:1px solid var(--line);box-shadow:0 2px 20px rgba(32,53,66,.07)}
+.nav-link{color:var(--navy)}
+.nav-link:hover,.nav-link.active,.mobile-links a:hover{color:var(--gold-dark)}
+.nav-link::after,.accent-line,.hero-notes span::before{background:var(--gold)}
+.menu-open{color:var(--navy);border-color:var(--line)}
+.mobile-backdrop{background:rgba(21,41,52,.72)}
+.mobile-panel{background:#fff;box-shadow:-15px 0 60px rgba(32,53,66,.22)}
+.mobile-head button{background:var(--cream);color:var(--navy)}
+.mobile-links a{border-bottom-color:var(--line);color:var(--navy)}
+.btn-gold,.hero .btn-gold,.mobile-cta{background:var(--gold);border-color:var(--gold);color:var(--navy)}
+.btn-gold:hover,.hero .btn-gold:hover,.mobile-cta:hover{background:#f1d47c;border-color:#f1d47c;color:var(--navy)}
+.btn-navy{background:var(--navy);border-color:var(--navy);color:#fff}
+.btn-navy:hover{background:var(--navy-soft);border-color:var(--navy-soft)}
+.text-link,.intro-copy h3,.intro-copy blockquote,.profile-role,.contact-line>svg,
+.contact-details a,.service-pills svg,.service-pills a:hover,.legal-copy a{color:var(--navy)}
+.text-link:hover,.contact-line a:hover,.legal-copy a:hover{color:var(--gold-dark)}
+.eyebrow,.card-number,.value-grid span,.three-values span{color:var(--gold-dark)}
+.hero h1 em,.hero .eyebrow-light,.eyebrow-light,.card-number{color:var(--gold-light)}
+.hero{background:var(--navy-deep)}
+.hero::before{background-image:linear-gradient(90deg,rgba(21,41,52,.97) 0%,rgba(21,41,52,.90) 32%,rgba(32,53,66,.73) 58%,rgba(32,53,66,.18) 100%),var(--hero-image)}
+.hero::after{background:linear-gradient(0deg,rgba(21,41,52,.36),transparent 24%)}
+.hero-copy p,.hero-bottom{color:#f0f1ee}
+.practice-card{background:var(--navy)}
+.practice-card .card-number{color:var(--gold-light)}
+.practice-card p{color:#f1f1ec}
+.picture-stamp{background:var(--navy);color:#fff}
+.picture-stamp small{color:var(--gold-light)}
+.intro-picture::before{border-color:var(--gold)}
+.section-navy,.closing{background:var(--navy);color:#fff}
+.section-navy p,.closing p{color:#e8ecea}
+.page-hero{background:radial-gradient(circle at 80% 22%,var(--navy-soft) 0%,transparent 42%),linear-gradient(120deg,var(--navy-deep),var(--navy))}
+.page-hero p{color:#e8ecea}
+.contact-form-shell{background:var(--cream);border-color:var(--line)}
+.contact-form-shell input:focus,.contact-form-shell textarea:focus,.contact-form-shell select:focus{border-color:var(--gold-dark);box-shadow:0 0 0 2px rgba(220,181,63,.2)}
+.contact-details>div,.service-pills a{border-color:var(--line)}
+.service-pills a:hover{border-color:var(--gold-dark)}
+.site-footer{background:var(--navy);color:#edece5}
+.site-footer p,.site-footer address{color:#e3e6e4!important}
+.site-footer .footer-links a,.site-footer .footer-legal a,.site-footer .footer-bottom{color:#e3e6e4!important}
+.site-footer .footer-links a:hover,.site-footer .footer-legal a:hover{color:var(--gold-light)!important}
+.footer-bottom{border-color:rgba(241,217,143,.25)}
+.site-footer .footer-logo,.site-footer .footer-logo img{background:none!important;box-shadow:none!important;padding:0!important;border:0!important}
+.scroll-top{color:var(--navy);border-color:var(--line)}
+/* Keep the reference mobile layout; only substitute the logo-sampled hero tint. */
+@media(max-width:600px){
+  .hero::before{background-image:linear-gradient(90deg,rgba(21,41,52,.95),rgba(32,53,66,.69)),var(--hero-image);background-position:60% center}
+}
