@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+# Independent concept uses noindex HTML; social preview crawlers need access to metadata and image.
